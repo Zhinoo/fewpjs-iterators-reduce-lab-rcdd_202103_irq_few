@@ -1,25 +1,5 @@
-const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
+onst batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
 // Code your solution here
-function findMatching(drivers, name){
-  return drivers.filter( find_name => {
-    return (find_name.toLowerCase() === name.toLowerCase())
-   }
-  )
-}
-
-function fuzzyMatch(drivers, letter){
-  return drivers.filter( find_name => {
-    if (letter.charAt(0) === find_name.charAt(0)){
-    return find_name
-    }
-  })
-}
-
-function matchName(drivers, name){
-  return drivers.filter( function(find_name){
-    if (find_name.name == name){
-      return find_name
-    }
-  })
-}
+    let totalBatteries = batteryBatches.reduce(function(total, element){
+        return element += total}, 0)
